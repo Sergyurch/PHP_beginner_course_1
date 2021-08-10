@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Регистрация</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        form {
+            max-width: 200px;
+            margin: auto;
+            text-align: left;
+        }
+
+        input[type="text"], input[type="submit"], input[type="date"], input[type="password"], textarea {
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <form action="" method="POST" autocomplete="on">
+        <p>
+            <label for="name">Ваше имя:</label>
+        </p>
+        <input type="text" id="name" name="name" placeholder="Например: Вася" required>
+        <p>
+            <label for="password">Пароль:</label>
+        </p>
+        <input type="password" id="password" name="password" placeholder="************" required>
+        <p>Ваш пол:</p>
+        <div>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">М</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Ж</label>
+        </div>
+        <p>
+            <label for="about">Расскажите немного о себе:</label>
+        </p>
+        <textarea id="about" rows="6" cols="6"></textarea>
+        <p>
+            <label for="country">В какой стране проживаете:</label>
+        </p>
+        <input type="text" id="country" name="country" placeholder="Например: Россия">
+        <p>Ваше образование:</p>
+        <div>
+            <input type="checkbox" id="middle" name="education" value="middle" checked>
+            <label for="middle">Среднее</label><br>
+            <input type="checkbox" id="high" name="education" value="high">
+            <label for="middle">Высшее</label><br>
+            <input type="checkbox" id="not_finished_high" name="education" value="not_finished_high" disabled>
+            <label for="not_finished_high">Неоконченное высшее</label>
+        </div>
+        <p>
+            <label for="birthday">Дата рождения:</label>
+        </p>
+        <input type="date" id="birthday" name="birthday">
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+  </body>
+</html>
