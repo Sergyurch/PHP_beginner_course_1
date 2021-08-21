@@ -249,7 +249,7 @@
             </div>
             <div id="loader">
                 <p>Ожидайте. Идет индексация.</p>
-                <img src="images/spinner.gif" alt="Лоадер">
+                <img src="https://lh3.googleusercontent.com/proxy/0N4k51Jf6sVOAkIDeku_X_WrTZUezp7Aif_9eCZk-IWAOuseV2_zYKZXMQvTh3CaAcAgIhr_MnDBEhzm03hbnhQgmCXAiuwk4dRCSy-uAg" alt="Лоадер">
             </div>
             <input type="submit" id="submit" value="Начать индексирование">
         </form>
